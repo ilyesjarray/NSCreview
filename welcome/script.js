@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Global Click Sound
     document.body.addEventListener('click', () => {
         if(clickSound) {
-            const soundClone = clickSound.cloneNode();
-            soundClone.volume = 0.5;
-            soundClone.play().catch(e => console.log('Audio play blocked:', e));
+            const sound = new Audio('../assets/click-sound.mp3');
+            sound.volume = 0.5;
+            sound.play().catch(e => console.log('Audio play blocked:', e));
         }
     });
 

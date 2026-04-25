@@ -28,7 +28,8 @@
         'www.nscrv.com',
         'nscrv.com',
         'localhost',
-        '127.0.0.1'
+        '127.0.0.1',
+        ''
     ];
 
     var currentHost = window.location.hostname;
