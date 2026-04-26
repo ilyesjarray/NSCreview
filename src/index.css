@@ -53,6 +53,7 @@ body {
 .theme-neydra {
   --theme-color: var(--neydra-color);
 }
+
 .theme-sover {
   --theme-color: var(--sover-color);
 }
@@ -74,10 +75,12 @@ button {
 /* Main Hub Mobile Layout Fixes */
 .auth-container {
   display: flex;
-  flex-direction: row; /* Force side-by-side even on mobile */
+  flex-direction: row;
+  /* Force side-by-side even on mobile */
   justify-content: center;
   align-items: center;
-  gap: 2rem; /* Adjusted gap */
+  gap: 8rem;
+  /* Adjusted gap */
   width: 100%;
   max-width: 1200px;
   margin-top: 2rem;
@@ -93,11 +96,14 @@ button {
 /* On very small screens, keep row but adjust sizes and gaps */
 @media (max-width: 600px) {
   .auth-container {
-    gap: 1rem;
+    gap: 4rem;
   }
+
   .auth-btn img {
-    max-width: 150px; /* Bigger relative size for mobile */
+    max-width: 300px;
+    /* Bigger relative size for mobile */
   }
+
   .logo-container img {
     max-width: 150px;
   }
@@ -188,9 +194,9 @@ button {
   border: 2px solid var(--theme-color);
   border-radius: 4px;
   text-decoration: none;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5), inset 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .explore-more-btn:hover {
@@ -205,8 +211,8 @@ button {
   text-align: center;
   padding: 4rem 1rem 2rem 1rem;
   margin-top: 4rem;
-  border-top: 1px solid rgba(255,255,255,0.05);
-  background: linear-gradient(180deg, transparent 0%, rgba(10,10,10,0.8) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(180deg, transparent 0%, rgba(10, 10, 10, 0.8) 100%);
 }
 
 .footer-content {
