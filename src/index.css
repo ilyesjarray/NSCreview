@@ -79,7 +79,7 @@ button {
   /* Force side-by-side even on mobile */
   justify-content: center;
   align-items: center;
-  gap: 8rem;
+  gap: 9rem;
   /* Adjusted gap */
   width: 100%;
   max-width: 1200px;
@@ -88,7 +88,7 @@ button {
 
 .auth-btn img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   object-fit: contain;
 }
